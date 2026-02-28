@@ -21,7 +21,7 @@ const T = {
   purple: "#7B5EA7",
   purpleLight: "#F0EAF8",
 };
-
+const API_URL = `${import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000'}/api/analyze`;
 /* ─── MOCK DATA ──────────────────────────────────────────────────── */
 const MOCK_TRANSACTIONS = [
   { date: "2026-10-01", desc: "Zomato Bangalore", amount: 685, type: "Debit", category: "Dining & Local Eats" },
@@ -879,7 +879,7 @@ export default function App() {
     try {
       // Show "parsing" UI for at least 1.5s so it doesn't flash
       const [response] = await Promise.all([
-        fetch("http://localhost:8000/api/analyze", {
+        fetch(`${API_BASE_URL}/api/analyze`, {
           method: "POST",
           body: formData,
         }),
