@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+pydantic-ai[gemini]==0.0.52
+pypdfium2
+Pillow
+httpx
