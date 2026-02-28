@@ -31,13 +31,13 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s  %(levelname)s  %(me
 log = logging.getLogger("ledger")
 
 # ─── Config ───────────────────────────────────────────────────────────────────
-GEMINI_API_KEY    = "AIzaSyDygs_kJCYCgG63Az5Bd65U4Rzp2YWFMuc"
+# GEMINI_API_KEY    = "AIzaSyDygs_kJCYCgG63Az5Bd65U4Rzp2YWFMuc"
 GEMINI_MODEL_NAME = "gemini-3-flash-preview"   # free-tier model
 SAFETY_BUFFER_PCT = 0.20
 MAX_PDF_SIZE_MB   = 20
 IMAGE_DPI         = 150
 
-os.environ["GEMINI_API_KEY"]=GEMINI_API_KEY
+# os.environ["GEMINI_API_KEY"]=GEMINI_API_KEY
 os.environ["GEMINI_MODEL_NAME"]=GEMINI_MODEL_NAME
 
 # ─── FastAPI ──────────────────────────────────────────────────────────────────
