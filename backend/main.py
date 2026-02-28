@@ -48,7 +48,7 @@ app = FastAPI(
 )
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://finnius-ai-frontend.onrender.com", "https://finnius-ai-1.onrender.com", "https://finnius-ai.onrender.com"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
