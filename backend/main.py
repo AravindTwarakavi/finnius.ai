@@ -38,7 +38,6 @@ MAX_PDF_SIZE_MB   = 20
 IMAGE_DPI         = 150
 
 os.environ["GEMINI_API_KEY"]=GEMINI_API_KEY
-os.environ["GEMINI_API_KEY"]=GEMINI_API_KEY
 os.environ["GEMINI_MODEL_NAME"]=GEMINI_MODEL_NAME
 
 # ─── FastAPI ──────────────────────────────────────────────────────────────────
