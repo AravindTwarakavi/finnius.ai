@@ -6,3 +6,4 @@ pydantic-ai[gemini]==0.0.52
 pypdfium2
 Pillow
 httpx
+gunicorn
